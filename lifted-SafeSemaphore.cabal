@@ -1,0 +1,20 @@
+Name:                lifted-SafeSemaphore
+Version:             0.1
+Synopsis:            Lifted functions for SafeSemaphore
+Homepage:            https://github.com/alphaHeavy/lifted-SafeSemaphore
+License:             BSD3
+License-file:        LICENSE
+Author:              Steve Severance <sseverance@alphaheavy.com>
+Maintainer:          Steve Severance <sseverance@alphaheavy.com>
+Category:            Concurrency
+Build-type:          Simple
+Cabal-version:       >=1.8
+
+Library
+  Hs-Source-Dirs: src
+  ghc-options:  -Wall -Werror -O2
+  Exposed-modules: Control.Concurrent.MSem.Lifted
+  Build-depends:   base,
+                   monad-control,
+                   mtl,
+                   SafeSemaphore
