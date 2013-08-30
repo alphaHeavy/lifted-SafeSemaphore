@@ -13,7 +13,8 @@ Cabal-version:       >=1.8
 Library
   Hs-Source-Dirs: src
   ghc-options:  -Wall -Werror -O2
-  Exposed-modules: Control.Concurrent.MSem.Lifted
+  Exposed-modules: Control.Concurrent.FairRWLock.Lifted
+                   Control.Concurrent.MSem.Lifted
   Build-depends:   base,
                    monad-control,
                    mtl,
